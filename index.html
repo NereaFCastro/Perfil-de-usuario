@@ -10,33 +10,34 @@
 <body>
     <style>
         html {
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    text-size-adjust: 100%;
-    line-height: 1.4;
-}
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+            line-height: 1.4;
+        }
 
 
-* {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
 
-body {
-    color: #404040;
-    font-family: "Arial", Segoe UI, Tahoma, sans-serifl, Helvetica Neue, Helvetica;
-}
+        body {
+            color: #404040;
+            font-family: "Arial", Segoe UI, Tahoma, sans-serifl, Helvetica Neue, Helvetica;
+        }
+
         .perfil_de_usuario {
-            background: linear-gradient(pink,rgb(81, 110, 77));
+            background: linear-gradient(pink, rgb(81, 110, 77));
             color: #333;
-            
+
         }
 
         .perfil_de_usuario img {
-            width: 150%;  
+            width: 150%;
             /*Cómo puedo centrar la foto?*/
         }
 
@@ -44,6 +45,7 @@ body {
             max-width: 1024px;
             margin-left: auto;
             margin-right: auto;
+
         }
 
         .perfil_de_usuario .contenedor_perfil {
@@ -51,7 +53,7 @@ body {
             margin-left: auto;
             margin-right: auto;
             width: 90%;
-        
+
         }
 
         .perfil_de_usuario .portada_perfil {
@@ -63,7 +65,7 @@ body {
             height: 20rem;
             margin-bottom: .5rem;
         }
-        
+
 
         .perfil_de_usuario .avatar_perfil {
             display: block;
@@ -112,32 +114,90 @@ body {
             display: inline-block;
             font-size: 1em;
             margin-right: 1rem;
+
         }
+
       
+
+        .nombre_galeria {
+            margin-bottom: 2rem;
+        }
+
+        .contenedor_galeria {
+            max-width: 1200px;
+            width: 90%;
+            padding: 40px 0;
+           
+            margin: auto;
+        }
+
+        .contenedor_galeria .galeria_fotos {
+            display: flex;
+            gap: 20px;
+
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+        }
+
+        .imagen img {
+            width: 100%;
+            border-radius: 5px;
+            object-fit: cover;
+        }
     </style>
     <section class="perfil_de_usuario">
         <div class="contenedor_perfil">
-           <div class="portada_perfil">
+            <div class="portada_perfil">
                 <div class="avatar_perfil"> <img src="imagenes/foto_de_perfil.avif" alt="foto_de_perfil">
                 </div>
-                <div class="datos_de_perfil">
-                    <h4 class="nombre_de_usuario">Sebastián González</h4>
-                    <p class="bio_usuario">¡Hola! Mi nombre es Sebastián y soy aventurero por definición. En este perfil
-                        podrás encontrar todo lo relacionado con mis viajes y experiencias. ¡Espero que te guste y te
-                        sumerjas en esta aventura conmigo!</p>
-                    <ul class="destinos_favoritos">
-                        <li><a href="https://www.google.com/">#Viajes</li></a>
-                        <li><a href="https://www.google.com/">#Aventuras</li></a>
-                        <li><a href="https://www.google.com/">#Travel</li></a>
-                        <li><a href="https://www.google.com/">#Experiencias</li></a>
-                        <li><a href="https://www.google.com/">#Mundo</li></a>
+                <div class="contenedor_perfil">
+                        <div class="datos_de_perfil">
+                        <h4 class="nombre_de_usuario">Sebastián González</h4>
+                        <p class="bio_usuario">¡Hola! Mi nombre es Sebastián y soy aventurero por definición. En este
+                            perfil
+                            podrás encontrar todo lo relacionado con mis viajes y experiencias. ¡Espero que te guste y
+                            te
+                            sumerjas en esta aventura conmigo!</p>
+                        <ul class="destinos_favoritos">
+                            <li><a href="https://www.google.com/">#Viajes</li></a>
+                            <li><a href="https://www.google.com/">#Aventuras</li></a>
+                            <li><a href="https://www.google.com/">#Travel</li></a>
+                            <li><a href="https://www.google.com/">#Experiencias</li></a>
+                            <li><a href="https://www.google.com/">#Mundo</li></a>
 
-                    </ul>
+                        </ul>
                 </div>
-
             </div>
         </div>
     </section>
+    <section class="contenedor_galeria">
+        <div class="galeria_fotos">
+            <div class="column">
+                <div class="imagen"> <img src="imagenes/avion.avif" alt="avión"></div>
+                <div class="imagen"> <img src="imagenes/buda_tailandia.avif" alt="buda tailandés"></div>
+                <div class="imagen"> <img src="imagenes/columpio_tailandia.avif" alt="columpio tailandés"></div>
+                <div class="imagen"> <img src="imagenes/Tailandia.avif" alt="Tailandia"></div>
+            </div>
+            <div class="column">
+                <div class="imagen"> <img src="imagenes/comida_tailandesa.avif" alt="comida tailandesa"></div>
+                <div class="imagen"> <img src="imagenes/flotador_playa.avif" alt="flotador"></div>
+                <div class="imagen"> <img src="imagenes/krabi_tailandia.avif" alt="Krabi"></div>
+                <div class="imagen"> <img src="imagenes/entrada_templo.avif" alt="entrada templo"></div>
+            </div>
+            <div class="column">
+                <div class="imagen"> <img src="imagenes/mercado.avif" alt="mercado"></div>
+                <div class="imagen"> <img src="imagenes/playa.avif" alt="playa"></div>
+                <div class="imagen"> <img src="imagenes/sandalias_playa.avif" alt="sandalias en la arena"></div>
+                <div class="imagen"> <img src="imagenes/faros.avif" alt="faros"></div>
+            </div>
+        </div>
+    </section>
+
 
 </body>
 
