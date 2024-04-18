@@ -1,0 +1,139 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    line-height: 1.4;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    color: #404040;
+    font-family: "Arial", Segoe UI, Tahoma, sans-serifl, Helvetica Neue, Helvetica;
+}
+
+.perfil_de_usuario {
+    background: linear-gradient(pink, rgb(81, 110, 77));
+    color: #333;
+
+}
+
+.perfil_de_usuario img {
+    width: 150%;
+    /*Cómo puedo centrar la foto?*/
+}
+
+.contenedor_perfil {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.perfil_de_usuario .contenedor_perfil {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+
+}
+
+.perfil_de_usuario .portada_perfil {
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 20rem;
+    margin-bottom: .5rem;
+}
+
+
+.perfil_de_usuario .avatar_perfil {
+    display: block;
+    width: 230px;
+    height: 230px;
+    background-color: #D9DCF1;
+    position: absolute;
+    bottom: -65px;
+    left: 4rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 8px solid #FFFFFF;
+    box-shadow: 0 0 12px 2px rgba(0, 0, 0, .2);
+}
+
+.perfil_de_usuario .datos_de_perfil {
+    position: absolute;
+    display: block;
+    width: calc(100% - 230px - 8rem);
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+}
+
+.perfil_de_usuario .nombre_de_usuario {
+    font-size: 2.3rem;
+    white-space: nowrap;
+    margin-bottom: .5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.perfil_de_usuario .bio_usuario {
+    font-size: 1em;
+    margin-bottom: .75rem;
+}
+
+.perfil_de_usuario .destinos_favoritos {
+    list-style: none;
+}
+
+.perfil_de_usuario .destinos_favoritos li {
+    display: inline-block;
+    font-size: 1em;
+    margin-right: 1rem;
+
+}
+
+
+.nombre_galeria {
+    margin-bottom: 2rem;
+}
+
+.contenedor_galeria {
+    max-width: 1200px;
+    width: 90%;
+    padding: 40px 0;
+   
+    margin: auto;
+}
+
+.contenedor_galeria .galeria_fotos {
+    display: flex;
+    gap: 20px;
+
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.imagen img {
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
