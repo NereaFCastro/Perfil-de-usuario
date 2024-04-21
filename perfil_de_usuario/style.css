@@ -1,78 +1,124 @@
-html {
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    text-size-adjust: 100%;
-    line-height: 1.4;
-}
 
-
+/* Me estuve ayudando de algunos tutoriales pero intenté utilizar únicamente lo que entendía como funcionaba, ya que no tiene mucho sentido copiar y pegar cosas que no sé como trabajarlas. Precisamente por eso, las imagenes son responsive, pero el resto del contenido aunque he intentado revisr mi código varias veces, no entiendo porque no lo es :(( */
 * {
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    line-height: 1.4;
+
+
 }
 
 body {
     color: #404040;
     font-family: "Arial", Segoe UI, Tahoma, sans-serifl, Helvetica Neue, Helvetica;
-}
-
-.perfil_de_usuario {
-    background: linear-gradient(pink, rgb(81, 110, 77));
-    color: #333;
-
-}
-
-.perfil_de_usuario img {
-    width: 150%;
-    /*Cómo puedo centrar la foto?*/
-}
-
-.contenedor_perfil {
-    max-width: 1024px;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-.perfil_de_usuario .contenedor_perfil {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
+    background: linear-gradient(rgb(81, 110, 77), rgb(234, 169, 49));
+    display: flex;
+    flex-wrap: wrap;
 
 }
 
 .perfil_de_usuario .portada_perfil {
-    display: block;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: top, center;
     position: relative;
     height: 20rem;
+    margin-top: 15px;
     margin-bottom: .5rem;
+    background: rgba(255, 255, 255, .1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, .2);
+    border-radius: 25px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-right: 2px solid rgba(255, 255, 255, .2);
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur (10px);
+    min-width: 300px;
+
+
+}
+.buscador{
+    position: relative;
+    text-align:end;
+    margin-top: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+
+}
+
+
+input.lupa{
+    padding: 9px 10px 9px 32px;
+    outline: none;
+    font-size: 18px;
+    border-radius: 25px;
+    color: #4444;
+    border: 3px solid #c4b31f;
+    background: #fff url(imagenes/lupa.png)
+    no repeat 9px center;
+    /* No entiendo porque no me lee el icono de la lupa!!!!! */
+    width: 60px;
+    transition: all .5s;
+
+}
+
+input.lupa:hover{
+    width: 180px;
+    background-color: #fff;
+    border-color: #fbc531;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, .2);
+    
+}
+
+.perfil_de_usuario {
+    max-width: 2000px;
+    width: 90%;
+    padding: 40px 0;
+    margin: auto;
 }
 
 
 .perfil_de_usuario .avatar_perfil {
-    display: block;
-    width: 230px;
-    height: 230px;
-    background-color: #D9DCF1;
-    position: absolute;
-    bottom: -65px;
-    left: 4rem;
+    display: flex;
+    width: 220px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
     border-radius: 50%;
     overflow: hidden;
     border: 8px solid #FFFFFF;
-    box-shadow: 0 0 12px 2px rgba(0, 0, 0, .2);
+    box-shadow: 1px 1px 0px #fbc531,
+        3px 3px 0px #a37c13;
+    text-align: center;
+    margin-bottom: 10%;
 }
 
+.perfil_de_usuario img {
+    width: 120%;
+    height: 120%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    object-fit: cover;
+}
+
+
+
+
+
+
 .perfil_de_usuario .datos_de_perfil {
-    position: absolute;
-    display: block;
+
+    display: inline-block;
+    height: auto;
     width: calc(100% - 230px - 8rem);
     right: 0;
     bottom: 0;
@@ -80,26 +126,50 @@ body {
     text-shadow: 0 0 5px rgba(0, 0, 0, .2);
     padding-bottom: 1rem;
     padding-right: 1rem;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    overflow: hidden;
 }
 
 .perfil_de_usuario .nombre_de_usuario {
     font-size: 2.3rem;
     white-space: nowrap;
-    margin-bottom: .5rem;
+    margin-bottom: 1px;
     overflow: hidden;
     text-overflow: ellipsis;
+    text-shadow: 1px 1px 0px #fbc531,
+        3px 3px 0px #a37c13;
+
+
+}
+
+.datos_basicos li {
+    display: inline-block;
+    font-size: 1em;
+    margin-right: 1rem;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    
+    overflow: hidden;
+
+}
+
+.user {
+    font-size: 1.5rem;
+    margin-bottom: 1px;
+
 }
 
 .perfil_de_usuario .bio_usuario {
     font-size: 1em;
     margin-bottom: .75rem;
+    margin-top: 10px;
+    text-align: justify;
 }
 
-.perfil_de_usuario .destinos_favoritos {
-    list-style: none;
-}
 
-.perfil_de_usuario .destinos_favoritos li {
+/* Los enlaces no llevan a google, solo quería darles apariencia de enlace */
+.perfil_de_usuario .etiquetas_favoritos li {
     display: inline-block;
     font-size: 1em;
     margin-right: 1rem;
@@ -111,18 +181,43 @@ body {
     margin-bottom: 2rem;
 }
 
-.contenedor_galeria {
-    max-width: 1200px;
+.contenedor_cuerpo {
+    max-width: 2000px;
     width: 90%;
     padding: 40px 0;
-   
     margin: auto;
 }
 
-.contenedor_galeria .galeria_fotos {
+/* Si es cierto que esto más que una tabla, es una lista, pero me gustaba más así 🙈 */
+.top_favoritos {
+
+    display: flex;
+    text-align: left;
+    float: left;
+    margin: auto;
+    padding: 15px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    color: #fff;
+    background: rgba(255, 255, 255, .1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, .2);
+    border-radius: 25px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-right: 2px solid rgba(255, 255, 255, .2);
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur (10px);
+
+}
+
+.top_destinos {
+    color: white;
+    text-shadow: 1px 1px 0px #fbc531,
+        3px 3px 0px #a37c13;
+}
+
+.contenedor_cuerpo .galeria_fotos {
     display: flex;
     gap: 20px;
-
 }
 
 .column {
