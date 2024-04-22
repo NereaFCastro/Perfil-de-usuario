@@ -88,7 +88,7 @@ input.lupa:hover{
 .perfil_de_usuario .avatar_perfil {
     display: flex;
     width: 220px;
-    height: 200px;
+    height: 220px;
     align-items: center;
     justify-content: center;
     margin: 50px;
