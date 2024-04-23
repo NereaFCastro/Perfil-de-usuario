@@ -18,8 +18,7 @@ body {
     color: #404040;
     font-family: "Arial", Segoe UI, Tahoma, sans-serifl, Helvetica Neue, Helvetica;
     background: linear-gradient(rgb(81, 110, 77), rgb(234, 169, 49));
-    display: flex;
-    flex-wrap: wrap;
+    
 
 }
 
